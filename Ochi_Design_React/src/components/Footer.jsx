@@ -1,38 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
-function Navbar() {
-  const [showNavbar, setShowNavbar] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-
-      if (currentScrollY > lastScrollY) {
-        // Scrolling down
-        setShowNavbar(false);
-      } else {
-        // Scrolling up
-        setShowNavbar(true);
-      }
-
-      setLastScrollY(currentScrollY);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [lastScrollY]);
-
+function Footer() {
   return (
-    <div
-      className={`fixed z-[999] w-full px-20 py-8 font-NeuMontreal flex justify-between items-center transition-transform duration-300 ease-in-out ${
-        showNavbar ? "translate-y-0" : "-translate-y-full"
-      } backdrop-blur-lg `}
-    >
-      <div className="logo">
+    <div className="w-full h-screen bg-zinc-900 p-20 flex gap-5 font-grotesk">
+      <div className="w-1/2  flex flex-col justify-between h-full">
+        <div className="heading">
+          <h1 className="text-[8vw] uppercase leading-none -mb-10">Eye-</h1>
+          <h1 className="text-[8vw] uppercase leading-none -mb-10">Opening</h1>
+        </div>
+
         <svg
           width="72"
           height="30"
@@ -62,22 +38,24 @@ function Navbar() {
           ></path>
         </svg>
       </div>
-      <div className="links flex gap-10">
-        {["Services", "Our Work", "About Us", "Insights", "Contact us"].map(
-          (item, index) => (
-            <a
-              key={index}
-              className={`text-sm capitalize font-light ${
-                index === 4 && "ml-32"
-              }`}
-            >
-              {item}
-            </a>
-          )
-        )}
+      <div className="w-1/2">
+        <h1 className="text-[8vw] uppercase leading-none -mb-10">
+          Presentations
+        </h1>
+        <div className="dets font-NeuMontreal mt-10">
+          <a href="#" className="block text-xl">
+            Facebook
+          </a>
+          <a href="#" className="block text-xl">
+            Instagram
+          </a>
+          <a href="#" className="block text-xl">
+            Twitter
+          </a>
+        </div>
       </div>
     </div>
   );
 }
 
-export default Navbar;
+export default Footer;
