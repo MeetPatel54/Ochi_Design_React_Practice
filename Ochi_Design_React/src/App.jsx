@@ -8,10 +8,12 @@ import Feature from "./components/Feature";
 import Cards from "./components/Cards";
 import Footer from "./components/Footer";
 import LocomotiveScroll from "locomotive-scroll";
+import DesktopOnly from "./components/Desktoponly";
 
 function App() {
   const locomotiveScroll = new LocomotiveScroll();
   return (
+    <DesktopOnly>
     <div className="w-full min-h-screen bg-zinc-900 text-white">
       <Navbar />
       <LandingPage />
@@ -22,6 +24,7 @@ function App() {
       <Cards />
       <Footer />
     </div>
+    </DesktopOnly>
   );
 }
 
