@@ -2,7 +2,7 @@
 
 A visually rich, modern UI/UX portfolio website inspired by [ochi.design](https://ochi.design), built using React.js, Tailwind CSS, and Framer Motion. This project is a creative frontend design practice focused on animations, responsive layouts, and sleek transitions.
 
-![Demo Screenshot](./preview.png)
+![Demo Screenshot]()
 
 ---
 
@@ -84,7 +84,7 @@ vite.config.js         # Vite bundler config
 ## ✍️ Author
 
 **Patel Meet**
-📧 [meetpateldev@gmail.com](mailto:pmeet782005@gmail.com)
+📧 [pmeet782005@gmail.com](mailto:pmeet782005@gmail.com)
 
 ---
 
