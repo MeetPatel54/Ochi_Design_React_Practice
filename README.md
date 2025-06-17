@@ -2,9 +2,9 @@
 
 A visually rich, modern UI/UX portfolio website inspired by [ochi.design](https://ochi.design), built using React.js, Tailwind CSS, and Framer Motion. This project is a creative frontend design practice focused on animations, responsive layouts, and sleek transitions.
 
-![Demo Screenshot]()
 
 ---
+![Screenshot 2025-06-17 182145](https://github.com/user-attachments/assets/a02cf688-57b0-4693-b559-34ed4af63ba4)
 
 ## 🚀 Features
 
